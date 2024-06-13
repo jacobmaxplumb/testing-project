@@ -11,6 +11,7 @@ function App() {
 
   return (
     <div style={{margin: '20px'}}>
+      <h3>Todo List</h3>
       <input value={text} onChange={(e) => setText(e.target.value)}/>
       <button onClick={addTodoItem}>Add</button>
       <ul>
