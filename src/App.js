@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -11,7 +10,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div style={{margin: '20px'}}>
       <input value={text} onChange={(e) => setText(e.target.value)}/>
       <button onClick={addTodoItem}>Add</button>
       <ul>
